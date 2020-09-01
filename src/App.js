@@ -1,9 +1,16 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Header from "./components/Header";
+import Filters from "./components/Filters";
+import RecipeList from "./components/RecipeList";
 
 function App() {
   return (
-    <h1>Drink recipes</h1>
+    <div>
+        <Header />
+        <Filters />
+        <RecipeList />
+    </div>
   );
 }
 
