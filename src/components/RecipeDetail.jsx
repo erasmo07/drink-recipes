@@ -44,7 +44,7 @@ export default function RecipeDetail({ openDetail, setOpenDetail, receipeID }) {
     };
 
     searchDetail();
-  }, [openDetail]);
+  }, [openDetail, receipeID]);
 
   const buildIngredients = () => {
     let ingredients = [];
