@@ -1,8 +1,13 @@
 import React from 'react';
 
-const Select = ({defaultName, options}) => {
+const Select = (props) => {
+    const {defaultName, options, onChange} = props;
+
     return (
-        <select className='form-control' name="category">
+        <select
+            className='form-control'
+            onChange={onChange}
+        >
             <option value="">{ defaultName }</option>
             {options.map(option => (
                 <option

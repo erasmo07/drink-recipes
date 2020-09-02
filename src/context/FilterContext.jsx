@@ -26,13 +26,11 @@ const FilterProvider = props => {
     return (
         <FilterContext.Provider
             value={{ categories, ingredients, types }} 
-        >
-            {props.children}
-        </FilterContext.Provider>
+        >{props.children}</FilterContext.Provider>
     )
 }
 
 
 export default FilterProvider;
 
-export { FilterContext as CategoryContext }
+export { FilterContext }
